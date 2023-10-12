@@ -12,7 +12,7 @@ body {
 .intro {
     height: 100vh;
     display: flex;
-    background: linear-gradient(to right, #713182, white);
+    background: #DFD9E2;
     justify-content: center;
     align-items: center;
 
@@ -22,32 +22,29 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: linear-gradient(to right, #713182, white);
+    background: linear-gradient(to right, #713182, #EC6E61);
     box-shadow: 0px 0px 15px #000000;
 }
 
 .intro-left {
     display: flex;
-    width: 25vw;
+    width: 35vw;
     height: 55vh;
+    border-right: 2px solid black;
     padding-bottom: 15px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
 }
 
 .intro-right {
     display: flex;
-    width: 25vw;
+    width: 35vw;
     height: 55vh;
     padding-bottom: 15px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
 }
 
 .head-shot {
@@ -55,9 +52,9 @@ body {
 }
 
 #about {
-    height: 65vh;
+    height: 50vh;
     display: flex;
-    background: #713182;
+    background: linear-gradient(to right, #713182, #EC6E61);
     justify-content: center;
     align-items: center;
 }
@@ -73,17 +70,51 @@ body {
 }
 
 .about-story {
-    background-color: white;
+    font-size: clamp(.5rem, 1vw, 1.5rem); /* Minimum size of 1rem, preferred size of 1.5vw, maximum size of 2rem */
+    background-color: #DFD9E2;
     border: 2px solid #713182;
     box-shadow: 0px 0px 15px black;
 }
 
 #skills {
-    height: 100vh;
+    height: 70vh;
     display: flex;
     background-color: #DFD9E2;
-    justify-content: center;
+    justify-content: space-around; 
+    gap: 20px;
     align-items: center;
+}
+
+.skills-card {
+    border: 2px solid purple;
+    display: flex;
+    align-items: center;
+    width: 35vh;
+    height: 30vh;
+    min-width: 200px; 
+    max-width: 500px; 
+    min-height: 275px; 
+    max-height: 500px; 
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    box-shadow: 0px 0px 10px #000000;
+    background-image: linear-gradient(to bottom, purple, purple);
+    background-repeat: no-repeat;
+    background-size: 100% 25%;
+}
+
+.skills-card img {
+    width: 40px;
+    height: 40px;
+}
+
+.card-title {
+   padding-bottom: 35px;
+}
+
+.skills-list {
+    list-style-type: none;
 }
 
 #projects {
