@@ -20,8 +20,7 @@ body {
 
 .full-intro {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row;  
     background: linear-gradient(to right, #713182, #EC6E61);
     box-shadow: 0px 0px 15px #000000;
 }
@@ -45,10 +44,23 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .head-shot {
     padding-bottom: 15px;
+}
+
+.project-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid hsl(234, 100%, 50%);
+    background: hsl(200, 100%, 50%, 0.1);
+    color: hsl(234, 100%, 50%);
+    margin-top: 40px;
 }
 
 #about {
@@ -77,12 +89,20 @@ body {
 }
 
 #skills {
-    height: 70vh;
+    height: 75vh;
     display: flex;
+    flex-direction: column;
     background-color: #DFD9E2;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.skils-container {
+    display: flex;
     justify-content: space-around; 
     gap: 20px;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .skills-card {
@@ -94,7 +114,7 @@ body {
     min-width: 200px; 
     max-width: 500px; 
     min-height: 275px; 
-    max-height: 500px; 
+    max-height: 800px; 
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
@@ -118,9 +138,92 @@ body {
 }
 
 #projects {
-    /* Projects styles go here */
+    height: 170vh;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, #713182, #EC6E61);
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-card {
+    display: flex;
+    flex: 1 0 30%;
+    margin: 1%;
+    width: 35vh;
+    height: 30vh;
+    min-width: 250px; 
+    max-width: 500px; 
+    min-height: 350px; 
+    max-height: 500px; 
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    box-shadow: 0px 0px 10px #000000;
+    border-radius: 15px;
+}
+
+.p-card-title {
+    height: 25%;
+    width: 100%;
+}
+
+.project-card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.desc-container {
+    margin-top: 15px;
+}
+
+.tech-container {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.btn-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid hsl(234, 100%, 50%);
+    background: hsl(200, 100%, 50%, 0.1);
+    color: hsl(234, 100%, 50%);
+}
+
+.btn:hover,
+.btn:focus-visible {
+    background: hsl(200, 100%, 50%, 0.2);
 }
 
 #contact {
-    /* Contact me styles go here */
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #DFD9E2;
+    justify-content: center; 
+    text-align: center;
+    gap: 10px;
+    font-size: clamp(.7rem, 1vw, 1.5rem);
+}
+
+.contact-info {
+
 }
