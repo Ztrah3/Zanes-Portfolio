@@ -115,6 +115,7 @@ body {
     display: flex;
     justify-content: center;
     padding-bottom: 10vh;
+    font-size: 80px;
 }
 
 .about-story {
@@ -132,6 +133,10 @@ body {
     background-color: #DFD9E2;
     justify-content: space-around;
     align-items: center;
+}
+
+.skill-title {
+    font-size: 80px;
 }
 
 .skils-container {
@@ -185,6 +190,11 @@ body {
     background: linear-gradient(to right, #713182, #EC6E61);
     justify-content: center;
     align-items: center;
+}
+
+.project-title {
+    margin-bottom: 150px;
+    font-size: 80px;
 }
 
 .project-container {
