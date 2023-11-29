@@ -33,7 +33,16 @@ body {
     padding-bottom: 15px;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    font-size: clamp(.7rem, 1vw, 2.5rem);
+}
+
+.head-shot {
+    width: 12vw; 
+    height: auto;
+    border-radius: 25%;
+    padding-bottom: 1vw;
 }
 
 .intro-right {
@@ -164,7 +173,7 @@ body {
     background-image: linear-gradient(to bottom, purple, purple);
     background-repeat: no-repeat;
     background-size: 100% 25%;
-    font-size: clamp(1rem, .8vw, 2.5rem);
+    font-size: clamp(1rem, .9vw, 2.5rem);
 }
 
 .skills-card img {
@@ -184,7 +193,7 @@ body {
 }
 
 #projects {
-    height: 170vh;
+    height: 175vh;
     display: flex;
     flex-direction: column;
     background: linear-gradient(to right, #713182, #EC6E61);
@@ -274,6 +283,21 @@ body {
     background: hsl(200, 100%, 50%, 0.2);
 }
 
+.cert-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px #000000;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 25px;
+    font-size: 40px;
+}
+
+.cert {
+    margin-top: 5px;
+    font-size: 80px;
+}
+
 #contact {
     height: 25vh;
     display: flex;
@@ -285,4 +309,3 @@ body {
     font-size: clamp(.7rem, 1vw, 1.5rem);
 }
 
-.contact-info {}
