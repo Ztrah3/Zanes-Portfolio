@@ -39,6 +39,10 @@ body {
     font-size: clamp(.7rem, 1vw, 2.5rem);
 }
 
+.name {
+    font-size: 50px;
+}
+
 .head-shot {
     width: 12vw; 
     height: auto;
@@ -53,10 +57,18 @@ body {
     padding-bottom: 15px;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     align-items: center;
     position: relative;
     font-size: clamp(.7rem, 1vw, 2.5rem);
+}
+
+.greeting {
+    font-size: 60px;
+}
+
+.intro-desc {
+    margin: 40px;
 }
 
 .head-shot {
@@ -96,7 +108,7 @@ body {
     background: hsl(200, 100%, 50%, 0.1);
     color: hsl(234, 100%, 50%);
     margin: 10px;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 .nav-btn-three {
