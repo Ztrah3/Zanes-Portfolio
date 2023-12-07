@@ -191,7 +191,7 @@ body {
     background-image: linear-gradient(to bottom, purple, purple);
     background-repeat: no-repeat;
     background-size: 100% 25%;
-    font-size: clamp(1rem, .9vw, 2.5rem);
+    font-size: clamp(.9rem, .8vw, 2.5rem);
 }
 
 .skills-card img {
