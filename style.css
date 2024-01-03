@@ -60,7 +60,7 @@ body {
     text-align: left;
     align-items: center;
     position: relative;
-    font-size: clamp(.7rem, 1vw, 2.5rem);
+    font-size: clamp(.7rem, .9vw, 2.5rem);
 }
 
 .greeting {
